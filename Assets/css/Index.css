@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EF87FA;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.content-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #99BB43 ;
+    padding: 1rem;
+}
+
+.content-img img{
+    width: 40rem;
+}
+
+.content-form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+}
+
+.form-cabe{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    border: none;
+    background-color: #EF87FA;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.login-button button:hover{
+    background-color: #EF45FA;
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.form-cabe h1::after{
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #EF87FA;
+    margin: 0 auto;
+    position:absolute;
+    border-radius: 15px;
+}
+
+.form-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #EF87FA;
+}
+
+.input-box label,.genero-title h6{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color:black;
+}
+
+.input-box input::placeholder{
+    font-size: 12px;
+    color: black;
+}
+
+.genero-group{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+.genero-input{
+    display: flex;
+    align-items: center;
+}
+
+.genero-input input{
+    margin-right: 0.35rem;
+}
+
+.genero-input label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+.conti button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #EF87FA;
+    padding: 0.62rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.conti button:hover{
+    background-color: #EF45FA;
+}
+
+.conti button a{
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+@media screen and (max-width: 1330px){
+        .content-img{
+            display: none;
+        }
+
+        .container{
+            width: 50%;
+        }
+
+        .form{
+            width: 100%;
+        }
+
+}
+
+@media screen and (max-width: 1064px) {
+    .container{
+        width: 90%;
+        height: auto;
+
+    }
+
+    .form-main{
+        flex-direction: column;
+        overflow-y:scroll ;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+        
+    }
+
+    .genero-group{
+        margin-top: 2rem;
+
+    }
+
+    .genero-group{flex-direction: column;
+        
+    }
+
+    .genero-input{
+        margin-top: 0.5rem;
+    }
+
+
+}
